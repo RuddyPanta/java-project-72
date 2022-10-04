@@ -9,6 +9,7 @@ lint:
 build:
 	./gradlew clean build
 .PHONY: build
-reports:
+test:
 	./gradlew test
+reports:
 	./gradlew jacocoTestReport
