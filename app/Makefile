@@ -12,3 +12,5 @@ build:
 test:
 	./gradlew test
 	./gradlew jacocoTestReport
+reports:
+	./gradlew jacocoTestReport
