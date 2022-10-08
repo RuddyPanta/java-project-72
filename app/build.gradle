@@ -30,8 +30,12 @@ jacocoTestReport {
     dependsOn test
     reports {
         xml.enabled true
+        xml.required = false
+        csv.required = false
+        html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
     }
 }
 jacoco {
     toolVersion = "0.8.7"
+    reportsDirectory = layout.buildDirectory.dir('$buildDir/reports/jacoco')
 }
